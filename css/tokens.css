@@ -1,0 +1,58 @@
+/* ============================================================
+   GBA Design Tokens — FUTURISTIC GLOBAL BUSINESS INTELLIGENCE
+   ============================================================ */
+:root{
+  /* 背景层 */
+  --bg-0:#080C16;          /* 主背景 */
+  --bg-1:#101827;          /* 次级背景 */
+  --bg-2:#151E2E;          /* 模块背景 */
+  --bg-3:#1B2436;          /* 深色辅助 */
+  --bg-glass:rgba(21,30,46,.72);
+  --bg-glass-strong:rgba(16,24,39,.88);
+
+  /* 强调色 */
+  --accent:#36A9FF;        /* 主强调 电光蓝 */
+  --accent-2:#8A72FF;      /* 辅助 电子紫 */
+  --cyan:#42D8D0;          /* 青 */
+  --up:#FF5C6C;            /* 涨/警示 红(中式) */
+  --down:#3BD69A;          /* 跌/正向 绿 */
+  --warn:#FF9F5A;
+
+  /* 文本 */
+  --text:#EDF2FA;
+  --text-2:#929FB2;
+  --text-3:#5E6C82;
+
+  /* 描边/分隔 */
+  --line:rgba(146,159,178,.14);
+  --line-2:rgba(54,169,255,.22);
+  --glow:0 0 0 1px rgba(54,169,255,.10), 0 8px 32px rgba(0,0,0,.35);
+
+  /* 圆角/间距 */
+  --r-s:10px; --r-m:16px; --r-l:22px; --r-xl:28px;
+  --sp-1:6px; --sp-2:10px; --sp-3:14px; --sp-4:20px; --sp-5:28px; --sp-6:40px;
+
+  /* 字体 */
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;
+  --mono:"SF Mono",ui-monospace,"Cascadia Code",Menlo,Consolas,monospace;
+
+  /* 渐变 */
+  --grad-blue:linear-gradient(135deg,#36A9FF 0%,#5B8CFF 55%,#8A72FF 100%);
+  --grad-cyan:linear-gradient(135deg,#42D8D0 0%,#36A9FF 100%);
+  --grad-purple:linear-gradient(135deg,#8A72FF 0%,#B06BFF 100%);
+  --grad-bg:radial-gradient(1200px 700px at 12% -8%,rgba(54,169,255,.10),transparent 55%),
+            radial-gradient(900px 600px at 92% 6%,rgba(138,114,255,.10),transparent 55%),
+            radial-gradient(700px 500px at 50% 100%,rgba(66,216,208,.05),transparent 60%),
+            linear-gradient(180deg,#080C16 0%,#0A0F1D 100%);
+
+  --shadow-card:0 12px 40px rgba(0,0,0,.28);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+/* 主题强调色变体（模块配色） */
+.t-blue{--mc:#36A9FF;--mc-soft:rgba(54,169,255,.14)}
+.t-purple{--mc:#8A72FF;--mc-soft:rgba(138,114,255,.14)}
+.t-cyan{--mc:#42D8D0;--mc-soft:rgba(66,216,208,.14)}
+.t-green{--mc:#3BD69A;--mc-soft:rgba(59,214,154,.14)}
+.t-orange{--mc:#FF9F5A;--mc-soft:rgba(255,159,90,.14)}
+.t-pink{--mc:#FF7BB0;--mc-soft:rgba(255,123,176,.14)}
