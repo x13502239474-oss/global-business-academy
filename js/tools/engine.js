@@ -123,6 +123,18 @@
     return { avg, turns, days: turns ? 365 / turns : 0 };
   };
 
+  // TCO 总拥有成本：采购价 + 物流关税 + 质量 + 库存持有 + 管理
+  E.tco = function (i) {
+    const price = +i.price || 0, qty = +i.qty || 0, logistics = +i.logistics || 0,
+          defectRate = +i.defectRate || 0, defectCost = +i.defectCost || 0,
+          inv = +i.inv || 0, holdRate = +i.holdRate || 0, mgmt = +i.mgmt || 0;
+    const purchase = price * qty;
+    const quality = qty * (defectRate / 100) * defectCost;
+    const holding = inv * (holdRate / 100);
+    const total = purchase + logistics + quality + holding + mgmt;
+    return { purchase, logistics, quality, holding, mgmt, total, unit: qty ? total / qty : 0 };
+  };
+
   // 比较优势模拟器：两国两产品单位劳动投入 → 机会成本与优势判定
   E.comparative = function (i) {
     const aX = +i.aX || 1, aY = +i.aY || 1, bX = +i.bX || 1, bY = +i.bY || 1;

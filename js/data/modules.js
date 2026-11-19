@@ -6,59 +6,86 @@
       id: 'M01', code: 'MODULE 01', icon: 'globe', color: 'blue',
       title: '全球商业基础与市场认知', en: 'Global Business Fundamentals',
       desc: '建立对全球商业环境的整体认识',
-      goal: '理解全球商业运行的基本逻辑，掌握国际贸易为何发生、如何演进，以及全球价值链与供应链如何组织。',
+      goal: '理解全球商业运行的基本逻辑，掌握国际贸易为何发生、如何演进，以及全球价值链与供应链如何组织。能独立分析产业转移与供应链重组的动因，完成采购 TCO（总拥有成本）比较、物流方案测算与安全库存与周转率计算，并对供应链韧性给出可执行的加固方案。',
       chapters: [
-        { id: 'm01-1', t: '全球商业的概念与演进', en: 'The Concept of Global Business', src: 'S1 Ch1 · S4 Ch1', mins: 12 },
-        { id: 'm01-2', t: '国际贸易的发展历史', en: 'History of International Trade', src: 'S1 Ch1', mins: 10 },
-        { id: 'm01-3', t: '全球化与经济一体化', en: 'Globalization & Integration', src: 'S1 Ch10 · S4 Ch2', mins: 12 },
-        { id: 'm01-4', t: '国际分工与比较优势', en: 'Division of Labor & Comparative Advantage', src: 'S1 Ch2 · S4 Ch2', mins: 16, lab: 'comparative-adv' },
-        { id: 'm01-5', t: '全球价值链与供应链', en: 'Global Value Chains', src: 'S1 Ch1 · S4 Ch1', mins: 14 },
-        { id: 'm01-6', t: '跨国企业与全球商业模式', en: 'MNCs & Global Business Models', src: 'S1 Ch4 · S4 Ch12', mins: 13 }
+        { id: 'm01-1', t: '全球商业的概念与演进', en: 'The Concept of Global Business', src: 'S1 Ch1 · S4 Ch1', mins: 22 },
+        { id: 'm01-2', t: '国际贸易的发展历史', en: 'History of International Trade', src: 'S1 Ch1 · 公开史料', mins: 20 },
+        { id: 'm01-3', t: '全球化与经济一体化', en: 'Globalization & Integration', src: 'S1 Ch10 · S4 Ch2', mins: 24 },
+        { id: 'm01-4', t: '国际分工与比较优势', en: 'Division of Labor & Comparative Advantage', src: 'S1 Ch2 · S4 Ch2', mins: 26, lab: 'comparative-adv' },
+        { id: 'm01-5', t: '全球价值链与供应链', en: 'Global Value Chains', src: 'S1 Ch1 · S4 Ch1', mins: 24 },
+        { id: 'm01-6', t: '跨国企业与全球商业模式', en: 'MNCs & Global Business Models', src: 'S1 Ch4 · S4 Ch12', mins: 22 },
+        { id: 'm01-7', t: '产业转移与供应链重组', en: 'Industrial Relocation & Supply Chain Restructuring', src: 'S1 Ch4 · 公开政策资料', mins: 24 },
+        { id: 'm01-8', t: '全球采购与供应商管理', en: 'Global Sourcing & Supplier Management', src: 'S1 Ch13 · S2 Ch2', mins: 24, lab: 'tco' },
+        { id: 'm01-9', t: '供应链结构与物流网络', en: 'Supply Chain Structure & Logistics Network', src: 'S2 Ch3 · S1 Ch13', mins: 24 },
+        { id: 'm01-10', t: '库存管理、供应链韧性与数字化', en: 'Inventory, Resilience & Digitalization', src: 'S1 Ch13 · 公开方法', mins: 24, lab: 'cashflow' }
       ]
     },
     {
       id: 'M02', code: 'MODULE 02', icon: 'target', color: 'purple',
       title: '国际市场研究与商业战略', en: 'International Market Research & Strategy',
       desc: '判断一个海外市场是否值得进入',
-      goal: '掌握从市场研究、宏观分析到 STP 定位与进入战略的完整决策链条，能独立完成一份海外市场研究报告。',
+      goal: '掌握从市场研究、宏观环境分析、STP 定位到进入模式选择的完整决策链条，能独立完成市场规模测算、国家风险评估与渠道伙伴筛选，并产出可支撑"进/不进/怎么进"的海外市场研究报告。',
       chapters: [
-        { id: 'm02-1', t: '国际市场研究基础', en: 'International Market Research', src: 'S4 Ch8', mins: 15 },
-        { id: 'm02-2', t: 'PEST 宏观环境分析', en: 'PEST Analysis', src: 'S4 Ch2,Ch6,Ch7', mins: 14, lab: 'pest' },
-        { id: 'm02-3', t: '全球市场细分与 STP', en: 'Segmentation, Targeting, Positioning', src: 'S4 Ch12,Ch16', mins: 16, lab: 'stp' },
-        { id: 'm02-4', t: 'SWOT 与竞争环境分析', en: 'SWOT & Competitive Analysis', src: 'S4 Ch12', mins: 13, lab: 'swot' },
-        { id: 'm02-5', t: '消费者购买行为与跨文化差异', en: 'Consumer Behavior & Culture', src: 'S4 Ch4,Ch5', mins: 15 },
-        { id: 'm02-6', t: '国际市场进入战略', en: 'Market Entry Strategies', src: 'S4 Ch12', mins: 14 },
-        { id: 'm02-7', t: '全球化与本土化', en: 'Globalization vs Localization', src: 'S4 Ch13', mins: 12 }
+        { id: 'm02-1', t: '国际市场研究基础', en: 'International Market Research', src: 'S4 Ch8', mins: 20 },
+        { id: 'm02-2', t: 'PEST 宏观环境分析', en: 'PEST Analysis', src: 'S4 Ch2,Ch6,Ch7', mins: 22, lab: 'pest' },
+        { id: 'm02-3', t: '全球市场细分与 STP', en: 'Segmentation, Targeting, Positioning', src: 'S4 Ch12,Ch16', mins: 22, lab: 'stp' },
+        { id: 'm02-4', t: 'SWOT 与竞争环境分析', en: 'SWOT & Competitive Analysis', src: 'S4 Ch12', mins: 20, lab: 'swot' },
+        { id: 'm02-5', t: '消费者购买行为与跨文化差异', en: 'Consumer Behavior & Culture', src: 'S4 Ch4,Ch5', mins: 22 },
+        { id: 'm02-6', t: '国际市场进入战略', en: 'Market Entry Strategies', src: 'S4 Ch12', mins: 22 },
+        { id: 'm02-7', t: '全球化与本土化', en: 'Globalization vs Localization', src: 'S4 Ch13', mins: 20 },
+        { id: 'm02-8', t: '全球市场结构与国家差异', en: 'Global Market Structure', src: 'S4 Ch2,Ch3 · 公开数据', mins: 20 },
+        { id: 'm02-9', t: '法律环境与市场进入壁垒', en: 'Legal Environment & Entry Barriers', src: 'S4 Ch7 · 公开法规', mins: 22 },
+        { id: 'm02-10', t: '国家风险评估与缓释', en: 'Country Risk Assessment', src: 'S4 Ch6 · 公开评估指标', mins: 20 },
+        { id: 'm02-11', t: '市场规模评估与需求预测', en: 'Market Sizing & Forecasting', src: 'S4 Ch8 · 公开方法', mins: 22 },
+        { id: 'm02-12', t: '渠道伙伴、合资与海外直接投资', en: 'Partners, JV & FDI', src: 'S4 Ch12 · 公开实务', mins: 22 }
       ]
     },
     {
       id: 'M03', code: 'MODULE 03', icon: 'chart', color: 'cyan',
       title: '国际贸易理论与政策', en: 'International Trade Theory & Policy',
       desc: '理解国家为何贸易、政策如何影响贸易',
-      goal: '掌握主流国际贸易理论，理解关税、非关税壁垒、WTO 与区域一体化的运作逻辑及现实影响。',
+      goal: '系统掌握从绝对优势、要素禀赋到新贸易理论的理论谱系与推导逻辑，理解关税、非关税壁垒、WTO 与区域一体化的运作机制，并能独立完成报关归类、原产地判定、贸易救济应对与关税成本计算。',
       chapters: [
-        { id: 'm03-1', t: '国际贸易基本概念', en: 'Basic Concepts of Trade', src: 'S1 Ch1', mins: 11 },
-        { id: 'm03-2', t: '绝对优势与比较优势理论', en: 'Absolute & Comparative Advantage', src: 'S1 Ch2', mins: 16, lab: 'comparative-adv' },
-        { id: 'm03-3', t: '要素禀赋与新贸易理论', en: 'Factor Endowment & New Trade Theory', src: 'S1 Ch2', mins: 13 },
-        { id: 'm03-4', t: '关税与非关税壁垒', en: 'Tariffs & Non-Tariff Barriers', src: 'S1 Ch6,Ch7', mins: 15, lab: 'tariff' },
-        { id: 'm03-5', t: 'WTO 规则与区域经济一体化', en: 'WTO & Regional Integration', src: 'S1 Ch9,Ch10', mins: 14 },
-        { id: 'm03-6', t: '国际贸易争端', en: 'Trade Disputes', src: 'S1 Ch9 · S4 Ch2', mins: 11 }
+        { id: 'm03-1', t: '国际贸易基本概念与统计口径', en: 'Basic Concepts & Measurement', src: 'S1 Ch1', mins: 18 },
+        { id: 'm03-2', t: '绝对优势与比较优势理论', en: 'Absolute & Comparative Advantage', src: 'S1 Ch2', mins: 24, lab: 'comparative-adv' },
+        { id: 'm03-3', t: '要素禀赋、里昂惕夫悖论与新贸易理论', en: 'Factor Endowment & New Trade Theory', src: 'S1 Ch2', mins: 22 },
+        { id: 'm03-4', t: '关税与非关税壁垒', en: 'Tariffs & Non-Tariff Barriers', src: 'S1 Ch6,Ch7', mins: 24, lab: 'tariff' },
+        { id: 'm03-5', t: 'WTO 规则与区域经济一体化', en: 'WTO & Regional Integration', src: 'S1 Ch9,Ch10', mins: 20 },
+        { id: 'm03-6', t: '国际贸易争端与传导路径', en: 'Trade Disputes', src: 'S1 Ch9 · S4 Ch2', mins: 18 },
+        { id: 'm03-7', t: '国际分工、规模经济与新贸易理论', en: 'Division of Labor & Scale Economies', src: 'S1 Ch2,Ch3', mins: 20 },
+        { id: 'm03-8', t: '贸易保护主义与自由贸易之争', en: 'Protectionism vs Free Trade', src: 'S1 Ch5,Ch6', mins: 20 },
+        { id: 'm03-9', t: '报关、HS 归类与原产地规则', en: 'Customs, HS & Rules of Origin', src: 'S1 Ch11 · 海关公开规则', mins: 24 },
+        { id: 'm03-10', t: '反倾销、反补贴与保障措施', en: 'Anti-dumping, Subsidies & Safeguards', src: 'S1 Ch8 · WTO 协定', mins: 22 },
+        { id: 'm03-11', t: '贸易制裁、出口管制与合规体系', en: 'Sanctions, Export Control & Compliance', src: '公开法规框架', mins: 20 },
+        { id: 'm03-12', t: '关税与合规成本计算实务', en: 'Duty & Compliance Cost Calculation', src: 'S1 Ch11,Ch15 · 公开税则', mins: 22, lab: 'tariff' }
       ]
     },
     {
       id: 'M04', code: 'MODULE 04', icon: 'ship', color: 'orange',
       title: '国际贸易实务与跨境交易', en: 'International Trade Operations',
       desc: '完整掌握一笔国际贸易订单的生命周期',
-      goal: '按真实交易顺序走通从出口准备、客户开发、报价谈判、签约、履约、结算到售后的全流程，重点掌握 Incoterms 2020。',
+      goal: '按真实交易顺序走通从出口准备、客户开发、报价谈判、签约、履约、结算到售后的全流程。重点掌握 Incoterms 2020 十一术语的责任与风险分界、HS 与报关实务、信用证审单、运输与保险、物流成本核算，以及汇率与应收账款风险控制。',
       chapters: [
-        { id: 'm04-1', t: '出口前准备：产品、供应商与成本', en: 'Pre-export Preparation', src: 'S2 Introduction · S1 Ch12,Ch15', mins: 15 },
-        { id: 'm04-2', t: '海外客户开发与询盘获取', en: 'Customer Development & Inquiry', src: 'S2 · S4 Ch19', mins: 14 },
-        { id: 'm04-3', t: '询盘处理与报价策略', en: 'Inquiry Handling & Quotation', src: 'S2 Ch5 · S1 Ch15', mins: 16, lab: 'fob' },
-        { id: 'm04-4', t: 'Incoterms 2020 全解', en: 'Incoterms 2020', src: 'S2 Ch1 · S1 Ch11', mins: 20, lab: 'incoterms' },
-        { id: 'm04-5', t: '商务谈判与合同签订', en: 'Negotiation & Contract', src: 'S2 Ch10 · S4 Ch19', mins: 16 },
-        { id: 'm04-6', t: '订单履行：运输、保险与单据', en: 'Order Fulfillment', src: 'S2 Ch3,Ch4,Ch11', mins: 17 },
-        { id: 'm04-7', t: '国际结算：T/T、L/C、D/P、D/A', en: 'International Payment', src: 'S2 Ch6,Ch7', mins: 18, lab: 'lc' },
-        { id: 'm04-8', t: '商品检验、索赔与争议处理', en: 'Inspection, Claims & Disputes', src: 'S2 Ch8,Ch9', mins: 13 }
+        { id: 'm04-1', t: '出口前准备、成本核算与出口资质', en: 'Pre-export Preparation', src: 'S2 Introduction · S1 Ch12,Ch15', mins: 22 },
+        { id: 'm04-2', t: '海外客户开发与询盘获取', en: 'Customer Development & Inquiry', src: 'S2 · S4 Ch19', mins: 20 },
+        { id: 'm04-3', t: '询盘处理与报价策略', en: 'Inquiry Handling & Quotation', src: 'S2 Ch5 · S1 Ch15', mins: 22, lab: 'fob' },
+        { id: 'm04-4', t: 'Incoterms 2020 全解', en: 'Incoterms 2020', src: 'S2 Ch1 · ICC Incoterms 2020', mins: 26, lab: 'incoterms' },
+        { id: 'm04-5', t: '商务谈判与合同签订', en: 'Negotiation & Contract', src: 'S2 Ch10 · S4 Ch19', mins: 22 },
+        { id: 'm04-6', t: '订单履行：运输、保险与单据', en: 'Order Fulfillment', src: 'S2 Ch3,Ch4,Ch11', mins: 22 },
+        { id: 'm04-7', t: '国际结算：T/T、L/C、D/P、D/A', en: 'International Payment', src: 'S2 Ch6,Ch7', mins: 24, lab: 'lc' },
+        { id: 'm04-8', t: '商品检验、索赔与争议处理', en: 'Inspection, Claims & Disputes', src: 'S2 Ch8,Ch9', mins: 20 },
+        { id: 'm04-9', t: '国际贸易交易流程全景', en: 'The Full Transaction Flow', src: 'S2 全书结构', mins: 20 },
+        { id: 'm04-10', t: '还盘、订单确认与变更管理', en: 'Counter-offer & Order Confirm', src: 'S2 Ch5,Ch10', mins: 20 },
+        { id: 'm04-11', t: '质量、数量与包装条款', en: 'Quality, Quantity & Packing', src: 'S2 Ch2,Ch3', mins: 22 },
+        { id: 'm04-12', t: 'Incoterms 精讲（一）：EXW/FCA/FAS/FOB', en: 'Incoterms: Pre-shipment Terms', src: 'ICC Incoterms 2020', mins: 22, lab: 'incoterms' },
+        { id: 'm04-13', t: 'Incoterms 精讲（二）：CFR/CIF/CPT/CIP/DAP/DPU/DDP', en: 'Incoterms: C & D Terms', src: 'ICC Incoterms 2020', mins: 24, lab: 'incoterms' },
+        { id: 'm04-14', t: '国际运输方式与航线选择', en: 'Transport Modes', src: 'S2 Ch3 · 公开实务', mins: 20 },
+        { id: 'm04-15', t: '国际货运代理与运输保险', en: 'Freight Forwarding & Insurance', src: 'S2 Ch3,Ch4', mins: 22 },
+        { id: 'm04-16', t: '物流成本核算', en: 'Logistics Cost Calculation', src: 'S2 Ch3 · 公开实务', mins: 20 },
+        { id: 'm04-17', t: '信用证操作流程与单据审核', en: 'L/C Operations & Document Check', src: 'S2 Ch7 · UCP600 框架', mins: 24, lab: 'lc' },
+        { id: 'm04-18', t: '国际结算风险与汇率风险', en: 'Settlement & FX Risk', src: 'S2 Ch6,Ch7 · 公开金融实务', mins: 22 },
+        { id: 'm04-19', t: '贸易融资与出口信用保险', en: 'Trade Finance & Credit Insurance', src: 'S2 Ch6 · 公开金融实务', mins: 20 },
+        { id: 'm04-20', t: '应收账款与现金流管理', en: 'Receivables & Cash Flow', src: '公开财务方法', mins: 20 }
       ]
     },
     {
@@ -67,31 +94,34 @@
       desc: '在不同国家和文化环境下经营品牌与产品',
       goal: '掌握全球品牌战略、跨文化营销与国际 4P 决策，能分析品牌如何在不同国家定位与本土化。',
       chapters: [
-        { id: 'm05-1', t: '国际营销基础', en: 'Foundations of International Marketing', src: 'S4 Ch1', mins: 12 },
-        { id: 'm05-2', t: '全球品牌战略', en: 'Global Brand Strategy', src: 'S4 Ch13', mins: 14 },
-        { id: 'm05-3', t: '跨文化营销与消费者心理', en: 'Cross-cultural Marketing', src: 'S4 Ch4,Ch5', mins: 15 },
-        { id: 'm05-4', t: '国际产品与定价策略', en: 'Product & Pricing Strategy', src: 'S4 Ch13,Ch18', mins: 16, lab: 'roi' },
-        { id: 'm05-5', t: '国际分销渠道', en: 'International Distribution', src: 'S4 Ch15', mins: 13 },
-        { id: 'm05-6', t: '全球品牌传播与本土化', en: 'Global Communication & Localization', src: 'S4 Ch16', mins: 14 },
-        { id: 'm05-7', t: '国际营销效果评估', en: 'Marketing Effectiveness', src: 'S4 Ch16 · S3 Ch11', mins: 12 }
+        { id: 'm05-1', t: '国际营销基础', en: 'Foundations of International Marketing', src: 'S4 Ch1', mins: 22 },
+        { id: 'm05-2', t: '全球品牌战略', en: 'Global Brand Strategy', src: 'S4 Ch13', mins: 24 },
+        { id: 'm05-3', t: '跨文化营销与消费者心理', en: 'Cross-cultural Marketing', src: 'S4 Ch4,Ch5', mins: 24 },
+        { id: 'm05-4', t: '国际产品与定价策略', en: 'Product & Pricing Strategy', src: 'S4 Ch13,Ch18', mins: 26, lab: 'roi' },
+        { id: 'm05-5', t: '国际分销渠道', en: 'International Distribution', src: 'S4 Ch15', mins: 24 },
+        { id: 'm05-6', t: '全球品牌传播与本土化', en: 'Global Communication & Localization', src: 'S4 Ch16', mins: 24 },
+        { id: 'm05-7', t: '国际营销效果评估', en: 'Marketing Effectiveness', src: 'S4 Ch16 · S3 Ch11', mins: 24, lab: 'roi' },
+        { id: 'm05-8', t: '数字营销与国际流量获取', en: 'Digital Marketing & Traffic', src: 'S3 Ch6-9 · 公开方法', mins: 24, lab: 'cac-ltv' },
+        { id: 'm05-9', t: '国际销售管理、渠道伙伴与大客户', en: 'Sales Management & Key Accounts', src: 'S4 Ch19 · S2 Ch12', mins: 24 },
+        { id: 'm05-10', t: '国际营销计划与预算编制', en: 'Marketing Plan & Budget', src: 'S4 Ch19 · 公开方法', mins: 24 }
       ]
     },
     {
       id: 'M06', code: 'MODULE 06', icon: 'network', color: 'purple',
       title: '海外社交媒体营销', en: 'Global Social Media Marketing',
       desc: '用海外社媒获取流量、建立品牌、开发客户',
-      goal: '掌握以 Tuten 四大社交区域为骨架的社媒营销体系，能制定平台策略、内容计划、广告投放与数据评估方案。',
+      goal: '掌握以 Tuten 四大社交区域为骨架的社媒营销体系，能制定平台策略、内容支柱与排期、广告账户结构、达人合作方案与 A/B 测试方案；会计算 CPM/CTR/CPC/CPA、互动率、净贡献与 ROMI，并用三段归因判断社媒的真实成交贡献。',
       chapters: [
-        { id: 'm06-1', t: '社交媒体营销环境与理论', en: 'The Social Media Environment', src: 'S3 Ch1', mins: 14 },
-        { id: 'm06-2', t: '社交消费者与用户行为', en: 'Social Consumers', src: 'S3 Ch2', mins: 13 },
-        { id: 'm06-3', t: '四大社交区域框架', en: 'The Four Zones of Social Media', src: 'S3 Ch6-9', mins: 17 },
-        { id: 'm06-4', t: '社交战略与战术规划', en: 'Strategy & Tactical Planning', src: 'S3 Ch4,Ch5', mins: 15 },
-        { id: 'm06-5', t: '平台专题：Facebook / Instagram', en: 'Meta Platforms', src: 'S3 Ch6,Ch7', mins: 16 },
-        { id: 'm06-6', t: '平台专题：TikTok / YouTube', en: 'TikTok & YouTube', src: 'S3 Ch7,Ch8', mins: 16 },
-        { id: 'm06-7', t: '平台专题：LinkedIn B2B', en: 'LinkedIn for B2B', src: 'S3 Ch6', mins: 13 },
-        { id: 'm06-8', t: '内容营销、UGC 与网红营销', en: 'Content, UGC & Influencers', src: 'S3 Ch3,Ch7', mins: 15 },
-        { id: 'm06-9', t: '社交媒体广告与 A/B 测试', en: 'Social Ads & A/B Testing', src: 'S3 Ch5,Ch11', mins: 14 },
-        { id: 'm06-10', t: '社媒数据分析与核心指标', en: 'Analytics & Metrics', src: 'S3 Ch10,Ch11', mins: 15, lab: 'roi' }
+        { id: 'm06-1', t: '社交媒体营销环境与理论', en: 'The Social Media Environment', src: 'S3 Ch1', mins: 22 },
+        { id: 'm06-2', t: '社交消费者与用户行为', en: 'Social Consumers', src: 'S3 Ch2', mins: 22 },
+        { id: 'm06-3', t: '四大社交区域框架', en: 'The Four Zones of Social Media', src: 'S3 Ch6-9', mins: 24 },
+        { id: 'm06-4', t: '社交战略与战术规划', en: 'Strategy & Tactical Planning', src: 'S3 Ch4,Ch5', mins: 22 },
+        { id: 'm06-5', t: '平台专题：Facebook / Instagram', en: 'Meta Platforms', src: 'S3 Ch6,Ch7', mins: 24 },
+        { id: 'm06-6', t: '平台专题：TikTok / YouTube', en: 'TikTok & YouTube', src: 'S3 Ch7,Ch8', mins: 24 },
+        { id: 'm06-7', t: '平台专题：LinkedIn B2B', en: 'LinkedIn for B2B', src: 'S3 Ch6', mins: 22 },
+        { id: 'm06-8', t: '内容营销、UGC 与网红营销', en: 'Content, UGC & Influencers', src: 'S3 Ch3,Ch7', mins: 24 },
+        { id: 'm06-9', t: '社交媒体广告与 A/B 测试', en: 'Social Ads & A/B Testing', src: 'S3 Ch5,Ch11', mins: 24, lab: 'roi' },
+        { id: 'm06-10', t: '社媒数据分析与核心指标', en: 'Analytics & Metrics', src: 'S3 Ch10,Ch11', mins: 24, lab: 'roi' }
       ]
     },
     {
@@ -107,7 +137,11 @@
         { id: 'm07-5', t: '获客成本与客户生命周期价值', en: 'CAC & LTV', src: 'S3 Ch11', mins: 14, lab: 'cac-ltv' },
         { id: 'm07-6', t: '跨境利润模型与盈亏平衡', en: 'Profit Model & Break-even', src: 'S1 Ch15 · 公开公式', mins: 16, lab: 'profit' },
         { id: 'm07-7', t: '现金流与库存周转', en: 'Cash Flow & Inventory', src: '公开公式', mins: 13, lab: 'cashflow' },
-        { id: 'm07-8', t: '企业国际化经营', en: 'Internationalizing the Firm', src: 'S4 Ch12 · S1 Ch4', mins: 12 }
+        { id: 'm07-8', t: '企业国际化经营', en: 'Internationalizing the Firm', src: 'S4 Ch12 · S1 Ch4', mins: 12 },
+        { id: 'm07-9', t: '平台运营：关键词、Listing 与评价', en: 'Marketplace Operations', src: 'S2 Ch12', mins: 15 },
+        { id: 'm07-10', t: '退货、拒付与售后成本', en: 'Returns, Chargebacks & After-sales', src: 'S2 Ch12', mins: 14 },
+        { id: 'm07-11', t: '跨境税务与合规基础', en: 'Cross-border Tax & Compliance', src: 'S1 Ch14 · 公开征管规则', mins: 15 },
+        { id: 'm07-12', t: '转化率优化与经营复盘', en: 'CRO & Business Review', src: 'S3 Ch11', mins: 14 }
       ]
     },
     {

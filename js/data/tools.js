@@ -106,6 +106,11 @@
     fields:[f('spend','营销总投入',30000,{unit:'¥'}),f('customers','新增客户数',300),f('aov','客单价',200,{unit:'¥'}),f('gm','毛利率 %',40),f('purchases','平均购买次数',5)],
     calc:(r)=>({rows:[['CAC 获客成本',G.utils.num(r.cac)+' ¥'],['LTV 客户终身价值',G.utils.num(r.ltv)+' ¥'],['LTV / CAC',G.utils.num(r.ratio,2)],['回本所需订单',r.paybackOrders+' 单']],formula:'CAC=投入÷新增客户；LTV≈客单价×毛利率×购买次数',note:'LTV/CAC≥3 常被视为较健康，具体标准因行业而异。'})});
 
+  T.push({id:'tco',name:'TCO 总拥有成本计算',cat:'business',icon:'calc',color:'purple',
+    desc:'把采购价、物流关税、质量、库存与管理的成本合并比较供应商',fn:'tco',
+    fields:[f('price','单价',10,{unit:'¥'}),f('qty','年采购量',10000,{unit:'件'}),f('logistics','物流+关税合计/年',8000,{unit:'¥'}),f('defectRate','不良率 %',3),f('defectCost','单件不良处理成本',8,{unit:'¥'}),f('inv','平均库存价值',120000,{unit:'¥'}),f('holdRate','库存持有成本率 %',20),f('mgmt','年管理成本',2000,{unit:'¥'})],
+    calc:(r)=>({rows:[['采购价合计',G.utils.num(r.purchase)+' ¥'],['物流与关税',G.utils.num(r.logistics)+' ¥'],['质量成本',G.utils.num(r.quality)+' ¥'],['库存持有成本',G.utils.num(r.holding)+' ¥'],['管理成本',G.utils.num(r.mgmt)+' ¥'],['TCO 合计',G.utils.num(r.total)+' ¥'],['单位 TCO',G.utils.num(r.unit,2)+' ¥']],formula:'TCO=采购价+物流关税+质量成本+库存持有+管理成本；单位TCO=TCO÷年采购量',note:'采购价通常只占 TCO 的 60%—85%，只比单价会导致误判。'})});
+
   T.push({id:'inventory',name:'库存周转率计算',cat:'business',icon:'calc',color:'cyan',
     desc:'衡量库存周转效率与资金占用',fn:'inventory',
     fields:[f('cogs','销售成本',600000,{unit:'¥'}),f('begin','期初库存',80000,{unit:'¥'}),f('end','期末库存',120000,{unit:'¥'})],
