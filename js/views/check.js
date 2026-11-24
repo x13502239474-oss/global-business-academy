@@ -66,10 +66,14 @@
         <div class="row between">
           <div><div class="tiny dim">本次得分</div><div class="val">${score} / ${qs.length}</div>
           <div class="tiny ${pct >= 80 ? '' : 'muted'}" style="margin-top:2px">${pct >= 80 ? '掌握良好，可以进入下一模块' : '建议回看错题对应章节，再做一次'}</div></div>
-          <button class="btn" onclick="location.reload()">重做</button>
+          <button class="btn" id="retryCheck">重做一遍</button>
         </div>
       </div>`;
       document.getElementById('submitAll').disabled = true;
+      document.getElementById('retryCheck').addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        G.views.check({ id });
+      });
       G.toast('已记录成绩');
     });
   };
