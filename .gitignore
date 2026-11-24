@@ -1,0 +1,21 @@
+# 依赖与构建产物
+node_modules/
+dist/
+.cache/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# 测试临时产物
+shots/test_*.png
+shots/tmp_*.png
+*.log
+
+# 本地环境变量与密钥
+.env
+.env.*
+*.pem
