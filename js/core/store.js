@@ -42,7 +42,9 @@
       projectSubs: {},  // projectId -> {text, at, done:{taskIdx:bool}, status}
       caseFav: [],      // caseId[]
       plan: { weeklyMin: 420, weeks: 8, start: null, weeksDone: [] },
-      legacy: { v1Completed: 0, mapped: 0, at: 0 }
+      legacy: { v1Completed: 0, mapped: 0, at: 0 },
+      /* 2.1 企业运营管理中心 */
+      controlCenter: null
     };
   }
 
@@ -235,6 +237,18 @@
 
     // ---- 设置 ----
     setSetting(k, v) { this.set(s => { s.settings[k] = v; }); },
+
+    // ---- 企业运营管理中心 ----
+    getControl() { return state.controlCenter; },
+    setControl(mutator) {
+      this.set(s => {
+        if (!s.controlCenter && G.data && G.data.controlDefaults) {
+          s.controlCenter = G.data.controlDefaults.createSample();
+        }
+        mutator(s.controlCenter);
+      });
+    },
+    replaceControl(nextObj) { this.set(s => { s.controlCenter = nextObj; }); },
 
     // ---- 导出 / 重置 ----
     exportJSON() { return JSON.stringify(state, null, 2); },

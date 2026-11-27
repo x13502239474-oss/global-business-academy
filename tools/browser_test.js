@@ -12,13 +12,13 @@ const SHOTS = path.resolve(__dirname, '../shots');
 if (!fs.existsSync(SHOTS)) fs.mkdirSync(SHOTS, { recursive: true });
 
 const ROUTES = [
-  'home', 'courses', 'module?id=S0', 'module?id=SX', 'module?id=SL',
+  'home', 'courses', 'module?id=S0', 'module?id=SX', 'module?id=SL', 'module?id=DI', 'module?id=DA',
   'lesson?id=s0-1', 'lesson?id=x-4', 'lesson?id=fb-3', 'lesson?id=yt-6',
   'lesson?id=tk-3', 'lesson?id=ig-5', 'lesson?id=li-6', 'lesson?id=mk-11',
-  'lesson?id=tr-3', 'lesson?id=cp-4',
+  'lesson?id=tr-3', 'lesson?id=cp-4', 'lesson?id=di-2', 'lesson?id=da-1', 'lesson?id=tk-9',
   'cases', 'case?id=duolingo', 'case?id=maersk',
-  'practice', 'project?id=p1', 'project?id=p7',
-  'check?id=SX', 'check?id=TR', 'me', 'sources'
+  'practice', 'project?id=p1', 'project?id=p7', 'project?id=p9', 'control',
+  'check?id=SX', 'check?id=TR', 'check?id=DI', 'me', 'sources'
 ];
 
 let fails = 0;
@@ -42,9 +42,9 @@ async function ensureLoaded(page) {
   for (let i = 0; i < 3; i++) {
     const okAll = await page.evaluate(() =>
       !!(window.GBA && GBA.views && GBA.views.courses && GBA.views.lesson && GBA.views.practice &&
-         GBA.views.project && GBA.views.check && GBA.views.me && GBA.views.sources &&
-         GBA.data && GBA.data.totalLessons === 84 &&
-         Object.keys(GBA.data.lessons || {}).length === 84));
+         GBA.views.project && GBA.views.control && GBA.views.check && GBA.views.me && GBA.views.sources &&
+         GBA.data && GBA.data.totalLessons === 96 &&
+         Object.keys(GBA.data.lessons || {}).length === 96));
     if (okAll) return true;
     await page.goto(BASE, { waitUntil: 'networkidle0' });
     await new Promise(r => setTimeout(r, 300));

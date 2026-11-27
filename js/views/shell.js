@@ -5,13 +5,15 @@
     { key: 'courses', icon: 'grid', label: '课程体系', path: 'courses' },
     { key: 'cases', icon: 'case', label: '案例库', path: 'cases' },
     { key: 'practice', icon: 'flag', label: '实战中心', path: 'practice' },
+    { key: 'control', icon: 'sliders', label: '运营中心', path: 'control' },
     { key: 'me', icon: 'me', label: '我的学习', path: 'me' },
     { key: 'sources', icon: 'library', label: '资料来源', path: 'sources' }
   ];
-  const TABS = ['home', 'courses', 'cases', 'practice', 'me'];
+  const TABS = ['home', 'courses', 'practice', 'control', 'me'];
   const TITLES = {
     home: '学习总览', courses: '课程体系', module: '模块', lesson: '课时',
     cases: '案例库', case: '案例', practice: '实战训练中心', project: '实战项目',
+    control: '企业运营管理中心',
     me: '我的学习', sources: '资料来源与时效说明', check: '模块检测', search: '搜索'
   };
 
@@ -25,10 +27,10 @@
             <div class="brand-text"><b>GLOBAL BUSINESS</b><span>ACADEMY 2.0</span></div>
           </a>
           <nav class="nav">
-            ${NAV.slice(0, 5).map(n => `<a class="nav-item" data-nav="${n.key}" href="#/${n.path}">
+            ${NAV.slice(0, 6).map(n => `<a class="nav-item" data-nav="${n.key}" href="#/${n.path}">
               <span class="ni">${G.icon(n.icon, 17)}</span><span>${n.label}</span></a>`).join('')}
             <div class="nav-sep">REFERENCE</div>
-            ${NAV.slice(5).map(n => `<a class="nav-item" data-nav="${n.key}" href="#/${n.path}">
+            ${NAV.slice(6).map(n => `<a class="nav-item" data-nav="${n.key}" href="#/${n.path}">
               <span class="ni">${G.icon(n.icon, 17)}</span><span>${n.label}</span></a>`).join('')}
             <a class="nav-item" data-nav="search" href="#" data-act="search">
               <span class="ni">${G.icon('search', 17)}</span><span>内容搜索</span></a>

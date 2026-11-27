@@ -16,7 +16,8 @@
     const done = S.completedCount();
     const pct = total ? done / total * 100 : 0;
     const groups = [
-      { key: 'social', label: '第一核心：国际社交媒体运营', note: '六大平台各自独立成课，每个平台按「认知 → 账号 → 内容 → 增长 → 商业 → 合规」六个方向展开。', ids: ['S0', 'SX', 'SF', 'SY', 'ST', 'SI', 'SL'] },
+      { key: 'social', label: '第一核心：国际社交媒体运营（Global Social Media Operations）', note: '六大平台各自独立成课，覆盖「认知 → 账号 → 内容 → 增长 → 商业 → 合规 → 企业认证与 API 基础」完整路径。', ids: ['S0', 'SX', 'SF', 'SY', 'ST', 'SI', 'SL'] },
+      { key: 'infra', label: '企业数字化基础设施：认证、数字身份与开发者 API', note: 'International Business Digital Infrastructure：企业官网/域名/邮箱、六平台企业认证对照、账号安全与开发者 API 生态。', ids: ['DI', 'DA'] },
       { key: 'marketing', label: '第二核心：国际市场营销理论与实战', note: '社媒课程的理论底座：市场选择、文化差异、定位、内容、流量、衡量、转化。', ids: ['MK'] },
       { key: 'trade', label: '第三部分：国际贸易核心知识', note: '只保留能直接用于报价、收款、履约与合规的部分，不做理论推导。', ids: ['TR'] },
       { key: 'practice', label: '第四部分：实战与检测', note: '案例方法、账号诊断、方案撰写与结业全案。', ids: ['CP'] }
@@ -24,7 +25,7 @@
 
     G.mount(`
       <div class="page-title">课程体系</div>
-      <div class="page-sub">10 个模块 · ${total} 节 · 约 ${Math.round(D.totalMins / 60)} 小时 · 已完成 ${done} 节（${Math.round(pct)}%）</div>
+      <div class="page-sub">${D.modules.length} 个模块 · ${total} 节 · 约 ${Math.round(D.totalMins / 60)} 小时 · 已完成 ${done} 节（${Math.round(pct)}%）</div>
 
       <div class="card" style="margin-bottom:24px">
         <div class="row between" style="margin-bottom:10px">
@@ -59,7 +60,7 @@
       <div class="section-gap"></div>
       <div class="card flat">
         <div class="small" style="color:var(--ink-600);line-height:1.85">
-          <b>为什么是 84 节而不是 300 节。</b>平台操作类内容平均 18 个月就会失效，堆知识点容易，但会让你学到一堆过期按钮。这里的取舍是：把机制、判断标准与操作框架写透，把会过期的界面细节留给官方文档——每节课都会告诉你该去官方核对什么。
+          <b>为什么是 ${total} 节而不是 300 节。</b>平台操作类内容平均 18 个月就会失效，堆知识点容易，但会让你学到一堆过期按钮。这里的取舍是：把机制、企业数字基建标准与操作框架写透，把会过期的界面细节留给官方文档——每节课都会告诉你该去官方核对什么。
         </div>
       </div>
     `);
@@ -106,7 +107,7 @@
 
       <div class="check-cta">
         <div class="ck">
-          <b>模块检测：${m.chapters.length >= 8 ? '10' : '8'} 题 · 约 8 分钟</b>
+          <b>模块检测：${((D.checks && D.checks[m.id]) || []).length} 题 · 约 6 分钟</b>
           <span>${chk ? `上次得分 ${chk.score}/${chk.total}，可重测` : '学完本模块后做一次即可，不必逐节刷题'}</span>
         </div>
         <a class="btn" href="#/check?id=${m.id}">开始检测</a>

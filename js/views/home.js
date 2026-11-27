@@ -2,8 +2,8 @@
 (function (G) {
   const D = G.data, S = G.store, U = G.utils;
 
-  const GROUP_COLOR = { social: '#2563EB', marketing: '#0D9488', trade: '#B45309', practice: '#15803D' };
-  const GROUP_LABEL = { social: '国际社媒运营', marketing: '国际市场营销', trade: '国际贸易核心', practice: '检测与实战' };
+  const GROUP_COLOR = { social: '#2563EB', infra: '#4F46E5', marketing: '#0D9488', trade: '#B45309', practice: '#15803D' };
+  const GROUP_LABEL = { social: '国际社媒运营', infra: '企业数字基建', marketing: '国际市场营销', trade: '国际贸易核心', practice: '检测与实战' };
 
   function nextLesson() {
     const st = S.get();
@@ -55,15 +55,15 @@
         <span class="btn primary">进入课时 ${G.icon('arrow', 15)}</span>
       </a>
 
-      <div class="sec-head"><h2>课程结构</h2><span class="more">10 模块 · ${total} 节 · 约 ${Math.round(D.totalMins / 60)} 小时</span></div>
+      <div class="sec-head"><h2>课程结构</h2><span class="more">${D.modules.length} 模块 · ${total} 节 · 约 ${Math.round(D.totalMins / 60)} 小时</span></div>
       <div class="card">
         <div class="mix">
-          ${['social', 'marketing', 'trade', 'practice'].map(k => `<i style="width:${w[k] / wSum * 100}%;background:${GROUP_COLOR[k]}"></i>`).join('')}
+          ${['social', 'infra', 'marketing', 'trade', 'practice'].map(k => `<i style="width:${(w[k] || 0) / wSum * 100}%;background:${GROUP_COLOR[k]}"></i>`).join('')}
         </div>
         <div class="mix-legend">
-          ${['social', 'marketing', 'trade', 'practice'].map(k => `<span><i style="background:${GROUP_COLOR[k]}"></i>${GROUP_LABEL[k]} ${Math.round(w[k] / wSum * 100)}%</span>`).join('')}
+          ${['social', 'infra', 'marketing', 'trade', 'practice'].map(k => `<span><i style="background:${GROUP_COLOR[k]}"></i>${GROUP_LABEL[k]} ${Math.round((w[k] || 0) / wSum * 100)}%</span>`).join('')}
         </div>
-        <div class="tiny dim" style="margin-top:10px">按建议学时统计。社媒是主线，营销理论是判断依据，贸易知识只保留能直接用于接单与履约的部分。</div>
+        <div class="tiny dim" style="margin-top:10px">按建议学时统计。六大平台运营与企业数字基建是主线，营销理论是判断依据，贸易知识只保留能直接用于接单与履约的部分。</div>
       </div>
 
       <div class="sec-head"><h2>课程模块</h2><span class="more"><a href="#/courses">查看全部</a></span></div>
@@ -89,7 +89,7 @@
       </div>
 
       <div class="sec-head"><h2>接下来做什么</h2></div>
-      <div class="grid2">
+      <div class="grid3">
         ${caseOfDay ? `<a class="card" href="#/case?id=${caseOfDay.id}" style="display:block">
           <div class="tiny dim" style="margin-bottom:6px">今日案例</div>
           <b style="font-size:15px;display:block;margin-bottom:4px">${caseOfDay.name}</b>
@@ -97,8 +97,13 @@
         </a>` : ''}
         <a class="card" href="#/practice" style="display:block">
           <div class="tiny dim" style="margin-bottom:6px">实战训练中心</div>
-          <b style="font-size:15px;display:block;margin-bottom:4px">8 个可交付的运营项目</b>
-          <div class="small muted" style="line-height:1.65">账号规划、内容日历、Thread、短视频脚本、投放方案、B2B 开发信——每个项目都有任务说明、操作步骤与完成标准。</div>
+          <b style="font-size:15px;display:block;margin-bottom:4px">${(D.projects || []).length} 个可交付的运营项目</b>
+          <div class="small muted" style="line-height:1.65">含国际生鲜企业 10 阶段全矩阵实战、账号规划、内容日历、投放方案与 B2B 开发信。</div>
+        </a>
+        <a class="card" href="#/control" style="display:block">
+          <div class="tiny dim" style="margin-bottom:6px">企业运营管理中心</div>
+          <b style="font-size:15px;display:block;margin-bottom:4px">Global Social Media Control Center</b>
+          <div class="small muted" style="line-height:1.65">六大平台资产总览、企业认证对照追踪、安全自检、内容排期与 API 接入状态管理。</div>
         </a>
       </div>
 

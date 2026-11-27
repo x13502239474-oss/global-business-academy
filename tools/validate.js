@@ -58,10 +58,10 @@ const DATA = ['js/data/modules.js',
   'js/data/lessons_s0.js', 'js/data/lessons_x.js', 'js/data/lessons_fb.js',
   'js/data/lessons_yt.js', 'js/data/lessons_tk.js', 'js/data/lessons_ig.js',
   'js/data/lessons_li.js', 'js/data/lessons_mk.js', 'js/data/lessons_tr.js',
-  'js/data/lessons_cp.js',
-  'js/data/cases.js', 'js/data/projects.js', 'js/data/checks.js', 'js/data/sources.js'];
+  'js/data/lessons_cp.js', 'js/data/lessons_di.js', 'js/data/lessons_da.js', 'js/data/lessons_infra_platforms.js',
+  'js/data/cases.js', 'js/data/projects.js', 'js/data/checks.js', 'js/data/sources.js', 'js/data/control.js'];
 const VIEWS = ['js/views/shell.js', 'js/views/home.js', 'js/views/courses.js', 'js/views/lesson.js',
-  'js/views/cases.js', 'js/views/practice.js', 'js/views/check.js', 'js/views/me.js', 'js/views/sources.js'];
+  'js/views/cases.js', 'js/views/practice.js', 'js/views/control.js', 'js/views/check.js', 'js/views/me.js', 'js/views/sources.js'];
 
 let errs = 0, warns = 0;
 const err = m => { errs++; console.log('  \u2717 ' + m); };
@@ -175,11 +175,11 @@ needCheck.forEach(id => {
 
 console.log('\n[7] 视图与路由');
 const views = G.views || {};
-['home', 'courses', 'module', 'lesson', 'cases', 'caseView', 'practice', 'project', 'check', 'me', 'sources']
+['home', 'courses', 'module', 'lesson', 'cases', 'caseView', 'practice', 'project', 'control', 'check', 'me', 'sources']
   .forEach(v => { if (typeof views[v] !== 'function') err('视图缺失: ' + v); });
 const appSrc = fs.readFileSync(path.join(ROOT, 'js/app.js'), 'utf8');
 const routes = [...appSrc.matchAll(/R\.reg\('([a-z]+)'/g)].map(m => m[1]);
-['home', 'courses', 'module', 'lesson', 'cases', 'case', 'practice', 'project', 'check', 'me', 'sources']
+['home', 'courses', 'module', 'lesson', 'cases', 'case', 'practice', 'project', 'control', 'check', 'me', 'sources']
   .forEach(r => { if (!routes.includes(r)) err('路由缺失: ' + r); });
 if (!errs) ok(routes.length + ' 条路由已注册');
 

@@ -37,7 +37,8 @@
         { id: 'x-5', t: '增长：搜索、话题与行业互动', en: 'Growth: Search, Topics & Community', src: 'X 搜索语法文档 · 公开运营实践', mins: 26 },
         { id: 'x-6', t: 'B2B 获客与私信转化', en: 'B2B Prospecting & DM Conversion', src: 'Hughes 社交销售框架 · X 私信规则', mins: 28 },
         { id: 'x-7', t: 'X Ads 与付费推广基础', en: 'X Ads Fundamentals', src: 'X Business 广告文档（核对 2026-11）', mins: 24 },
-        { id: 'x-8', t: '规则、自动化与账号安全', en: 'Rules, Automation & Account Safety', src: 'X Rules · 自动化与垃圾信息政策', mins: 22 }
+        { id: 'x-8', t: '规则、自动化与账号安全', en: 'Rules, Automation & Account Safety', src: 'X Rules · 自动化与垃圾信息政策', mins: 22 },
+        { id: 'x-9', t: 'X 企业金标认证与开发者 API 基础', en: 'X Premium Business & Developer API Basics', src: 'X Business · X Developer Platform（核对 2026-11）', mins: 26 }
       ]
     },
     {
@@ -54,7 +55,8 @@
         { id: 'fb-5', t: 'Meta 广告：结构、目标与预算', en: 'Meta Ads Structure & Budget', src: 'Meta 广告管理文档 · Levitan 结构底本', mins: 28 },
         { id: 'fb-6', t: '受众、素材与 Advantage+', en: 'Audience, Creative & Advantage+', src: 'Meta Advantage+ 与素材政策', mins: 28 },
         { id: 'fb-7', t: '转化追踪：Pixel、CAPI 与再营销', en: 'Pixel, CAPI & Retargeting', src: 'Meta 转化 API 文档 · 隐私合规说明', mins: 26 },
-        { id: 'fb-8', t: '独立站引流实战与广告政策风险', en: 'Driving Traffic to DTC & Ad Policy Risk', src: 'Meta 广告政策 · 电商投放公开实践', mins: 26 }
+        { id: 'fb-8', t: '独立站引流实战与广告政策风险', en: 'Driving Traffic to DTC & Ad Policy Risk', src: 'Meta 广告政策 · 电商投放公开实践', mins: 26 },
+        { id: 'fb-9', t: 'Facebook 企业资产、认证与跨平台协同', en: 'Meta Business Portfolio, Verification & Cross-Platform Ops', src: 'Meta Business Help Center（核对 2026-11）', mins: 26 }
       ]
     },
     {
@@ -71,7 +73,8 @@
         { id: 'yt-5', t: 'YouTube SEO 与元数据', en: 'YouTube SEO & Metadata', src: 'YouTube 搜索与元数据文档', mins: 26 },
         { id: 'yt-6', t: '推荐流量与数据诊断', en: 'Recommendation & Analytics', src: 'YouTube Analytics 指标文档', mins: 28 },
         { id: 'yt-7', t: 'Shorts：短视频的独立逻辑', en: 'Shorts: A Separate System', src: 'YouTube Shorts 官方说明（核对 2026-11）', mins: 24 },
-        { id: 'yt-8', t: '变现、品牌合作与版权合规', en: 'Monetization, Partnerships & Copyright', src: 'YouTube 合作伙伴计划 · 版权与 reused content 政策', mins: 26 }
+        { id: 'yt-8', t: '变现、品牌合作与版权合规', en: 'Monetization, Partnerships & Copyright', src: 'YouTube 合作伙伴计划 · 版权与 reused content 政策', mins: 26 },
+        { id: 'yt-9', t: 'YouTube 品牌频道、官方认证、生鲜展示视频与 Data API', en: 'Brand Account, Verification, Fresh Produce Video & Data API', src: 'YouTube Help · YouTube Data API 文档（核对 2026-11）', mins: 28 }
       ]
     },
     {
@@ -88,7 +91,8 @@
         { id: 'tk-5', t: '推荐机制与冷启动', en: 'Distribution Mechanics & Cold Start', src: 'TikTok 官方分发说明 · 公开创作者经验', mins: 28 },
         { id: 'tk-6', t: '数据诊断与内容迭代', en: 'Analytics & Iteration', src: 'TikTok Analytics 指标文档', mins: 26 },
         { id: 'tk-7', t: 'TikTok Shop、联盟与广告', en: 'Shop, Affiliate & Ads', src: 'TikTok Shop 与 Ads 官方文档（按市场区分）', mins: 28 },
-        { id: 'tk-8', t: '规则、地区合规与账号健康', en: 'Policy, Regional Compliance & Account Health', src: 'TikTok 社区准则与商业内容政策', mins: 24 }
+        { id: 'tk-8', t: '规则、地区合规与账号健康', en: 'Policy, Regional Compliance & Account Health', src: 'TikTok 社区准则与商业内容政策', mins: 24 },
+        { id: 'tk-9', t: 'TikTok 企业资质认证、Business Center 与 API 基础', en: 'TikTok Business Center, Verification & Developer API', src: 'TikTok Business Help Center · TikTok for Developers（核对 2026-11）', mins: 28 }
       ]
     },
     {
@@ -105,7 +109,8 @@
         { id: 'ig-5', t: '视觉体系与设计执行', en: 'Visual System & Execution', src: '视觉设计通识 · 平台规格文档', mins: 26 },
         { id: 'ig-6', t: '搜索可见性：关键词、标签与替代文本', en: 'Search Visibility', src: 'Instagram 搜索与标签政策（2025-12 变更）', mins: 24 },
         { id: 'ig-7', t: '创作者合作与私信转化', en: 'Creator Partnerships & DM Conversion', src: '品牌内容工具文档 · Flint 私信框架', mins: 26 },
-        { id: 'ig-8', t: 'Insights、投放与原创性合规', en: 'Insights, Ads & Originality', src: 'Instagram Insights 文档 · 原创性与 AI 标注政策', mins: 26 }
+        { id: 'ig-8', t: 'Insights、投放与原创性合规', en: 'Insights, Ads & Originality', src: 'Instagram Insights 文档 · 原创性与 AI 标注政策', mins: 26 },
+        { id: 'ig-9', t: 'Instagram 企业资产、Meta Verified 认证与 Graph API 基础', en: 'Business Assets, Meta Verified & Instagram Graph API', src: 'Meta Business Help Center · Meta for Developers（核对 2026-11）', mins: 26 }
       ]
     },
     {
@@ -123,7 +128,8 @@
         { id: 'li-6', t: '连接邀请、InMail 与开发信', en: 'Invitations, InMail & Outreach', src: 'LinkedIn 消息与邀请限制政策', mins: 28 },
         { id: 'li-7', t: 'Sales Navigator 与线索管理', en: 'Sales Navigator & Pipeline', src: 'Sales Navigator 官方功能文档', mins: 26 },
         { id: 'li-8', t: 'LinkedIn Ads 基础', en: 'LinkedIn Ads Fundamentals', src: 'LinkedIn Marketing Solutions 文档', mins: 24 },
-        { id: 'li-9', t: '国际商务合作、规则与合规', en: 'Partnerships, Rules & Compliance', src: 'LinkedIn 用户协议与自动化限制', mins: 24 }
+        { id: 'li-9', t: '国际商务合作、规则与合规', en: 'Partnerships, Rules & Compliance', src: 'LinkedIn 用户协议与自动化限制', mins: 24 },
+        { id: 'li-10', t: 'LinkedIn 企业主页认证、Showcase Page 与 API 基础', en: 'Company Page Verification, Showcase Pages & LinkedIn API', src: 'LinkedIn Help · LinkedIn Developer Platform（核对 2026-11）', mins: 26 }
       ]
     },
     {
@@ -180,6 +186,30 @@
         { id: 'cp-4', t: '结业项目：六平台营销全案', en: 'Capstone: Six-platform Plan', src: '综合全部模块', mins: 40 },
         { id: 'cp-5', t: '复盘与迭代：把项目跑起来', en: 'Review & Iteration', src: '综合 · 数据复盘方法', mins: 24 }
       ]
+    },
+    {
+      id: 'DI', code: 'MODULE 11', icon: 'shield', color: '#1D4ED8',
+      title: '国际企业认证与数字身份体系', en: 'International Enterprise Digital Identity & Verification',
+      desc: '官网、域名、企业邮箱、六平台企业认证对照与资产安全治理',
+      weight: '数字化基建',
+      goal: '把零散的社媒注册升级为正规国际企业的线上数字身份体系：统一英文名称、官网域名与企业邮箱，掌握六大平台企业资质认证与公众认证标识的本质区别，并建立可交接、可恢复、防被盗的企业账号安全与权限管理机制。',
+      chapters: [
+        { id: 'di-1', t: '企业数字身份建设：官网、域名、邮箱与品牌资产统一', en: 'Enterprise Digital Identity Foundation', src: '各平台商业验证与域名核验官方文档（核对 2026-11）', mins: 28 },
+        { id: 'di-2', t: '全球六大平台企业认证对照与审核机制', en: 'Six-Platform Enterprise Verification Matrix', src: 'TikTok / Meta / X / LinkedIn / YouTube 官方认证文档（核对 2026-11）', mins: 32 },
+        { id: 'di-3', t: '企业账号安全、权限分配与数字资产管理', en: 'Account Security, RBAC & Digital Asset Governance', src: '各平台商业资产与安全帮助中心（核对 2026-11）', mins: 28 }
+      ]
+    },
+    {
+      id: 'DA', code: 'MODULE 12', icon: 'code', color: '#4F46E5',
+      title: '国际企业开发者体系与 API 基础', en: 'Enterprise Developer Ecosystem & Social APIs',
+      desc: '理解六大平台开发者生态、OAuth 授权与多平台数据整合蓝图',
+      weight: '数字化基建',
+      goal: '明确区分普通账号、企业账号与开发者账号的职责边界，理解 API、OAuth、Token、权限审核与配额限制的底层逻辑，掌握六大平台开发者生态的能力范围，并能规划未来的多平台内容管理、数据统计与 CRM 整合方案（不误导常规运营必须申请开发者账号）。',
+      chapters: [
+        { id: 'da-1', t: '开发者账号与 API 基础：OAuth、Token 与权限审核', en: 'Developer Accounts, OAuth & API Fundamentals', src: 'OAuth 2.0 规范 · 各平台开发者入门文档（核对 2026-11）', mins: 28 },
+        { id: 'da-2', t: '六大平台开发者生态全景与合规边界', en: 'Six-Platform Developer Ecosystems & Compliance', src: 'TikTok / Meta / X / LinkedIn / YouTube 开发者文档（核对 2026-11）', mins: 30 },
+        { id: 'da-3', t: '多平台自动化运营与 CRM 数据整合蓝图', en: 'Multi-Platform Automation & CRM Integration Blueprint', src: '各平台商业 API 政策 · 企业数字化运营公开实践', mins: 28 }
+      ]
     }
   ];
 
@@ -198,8 +228,8 @@
   const totalMins = allLessons.reduce((a, c) => a + (c.mins || 0), 0);
 
   // 教学配比（按学时统计，用于课程页说明）
-  const groupOf = { S0: 'social', SX: 'social', SF: 'social', SY: 'social', ST: 'social', SI: 'social', SL: 'social', MK: 'marketing', TR: 'trade', CP: 'practice' };
-  const weights = { social: 0, marketing: 0, trade: 0, practice: 0 };
+  const groupOf = { S0: 'social', SX: 'social', SF: 'social', SY: 'social', ST: 'social', SI: 'social', SL: 'social', DI: 'infra', DA: 'infra', MK: 'marketing', TR: 'trade', CP: 'practice' };
+  const weights = { social: 0, infra: 0, marketing: 0, trade: 0, practice: 0 };
   M.forEach(m => { weights[groupOf[m.id]] += m.chapters.reduce((a, c) => a + c.mins, 0); });
 
   G.data = G.data || {};

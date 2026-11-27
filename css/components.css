@@ -139,6 +139,8 @@ textarea.input{min-height:96px;resize:vertical;line-height:1.7}
 .prose li::marker{color:var(--ink-400)}
 .prose ol>li::marker{color:var(--blue-600);font-weight:600}
 .prose table{width:100%;border-collapse:collapse;font-size:13px;margin:0 0 18px;border:1px solid var(--line)}
+.prose code{overflow-wrap:anywhere}
+@media (max-width:760px){.prose table{display:block;overflow-x:auto;max-width:100%}}
 .prose th,.prose td{padding:9px 11px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;line-height:1.65}
 .prose th{background:var(--bg-sub);color:var(--ink-700);font-weight:600;font-size:12.2px}
 .prose tr:last-child td{border-bottom:0}
@@ -153,6 +155,7 @@ textarea.input{min-height:96px;resize:vertical;line-height:1.7}
 .lesson-title{font-size:25px;line-height:1.35;letter-spacing:-.02em}
 .lesson-en{font-size:12.5px;color:var(--ink-400);margin-top:5px}
 .lesson-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}
+.lesson-meta .chip{white-space:normal;max-width:100%;line-height:1.45}
 .learn-objectives{
   background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--blue-600);
   border-radius:0 var(--r-s) var(--r-s) 0;padding:15px 18px;margin-bottom:20px;

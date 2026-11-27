@@ -15,7 +15,7 @@
       <div class="card" style="margin-bottom:22px">
         <div class="small" style="color:var(--ink-600);line-height:1.85">
           <b>怎么用这套项目：</b>不要等"学完再做"。每个模块学完后，挑一个对应项目做到能交付为止——做不出来的地方，就是你需要回去补的课。
-          八个项目串起来，就是一份完整的海外社媒营销方案。
+          全部 ${list.length} 个项目（含项目九「国际生鲜企业数字矩阵 10 阶段实战」）可配合 <a href="#/control">企业运营管理中心</a> 同步推进。
         </div>
       </div>
 

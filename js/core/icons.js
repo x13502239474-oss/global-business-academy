@@ -41,6 +41,9 @@
   I.megaphone = (s) => wrap('<path d="M3.5 11v2a1 1 0 0 0 1 1H8l8 4.5V4.5L8 9H4.5a1 1 0 0 0-1 1z"/><path d="M18 9.5a4 4 0 0 1 0 5"/>', s);
   I.brain = (s) => wrap('<path d="M9.5 3.5A3 3 0 0 0 7 6.5 3 3 0 0 0 5.5 12 3 3 0 0 0 7 17.5a3 3 0 0 0 2.5 3V3.5z"/><path d="M14.5 3.5a3 3 0 0 1 2.5 3 3 3 0 0 1 1.5 5.5 3 3 0 0 1-1.5 5.5 3 3 0 0 1-2.5 3V3.5z"/>', s);
   I.network = (s) => wrap('<circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5 5.5 16.8M12 7.5l6.5 9.3M7.5 19h9"/>', s);
+  I.shield = (s) => wrap('<path d="M12 3 4.5 6.2v5.3c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6.2z"/><path d="m9 12 2 2 4-4"/>', s);
+  I.code = (s) => wrap('<path d="m8 8-4 4 4 4"/><path d="m16 8 4 4-4 4"/><path d="m14 5-4 14"/>', s);
+  I.sliders = (s) => wrap('<path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2" fill="#fff"/><circle cx="15" cy="12" r="2" fill="#fff"/><circle cx="10" cy="18" r="2" fill="#fff"/>', s);
   I.blob = (s) => wrap('<circle cx="12" cy="12" r="8"/>', s);
 
   G.icons = I;

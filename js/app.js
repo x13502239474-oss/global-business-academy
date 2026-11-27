@@ -12,6 +12,7 @@
     R.reg('case', (p, q) => G.views.caseView(p, q));
     R.reg('practice', () => G.views.practice());
     R.reg('project', (p, q) => G.views.project(p, q));
+    R.reg('control', () => G.views.control());
     R.reg('check', (p, q) => G.views.check(p, q));
     R.reg('me', () => G.views.me());
     R.reg('sources', () => G.views.sources());
